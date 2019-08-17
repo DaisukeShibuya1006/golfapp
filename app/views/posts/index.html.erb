@@ -1,0 +1,21 @@
+<div class="main posts-index">
+  <div class="container">
+    <!-- 投稿一覧を作成する -->
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <!-- 画像を取得する -->
+        <div class="post-left">
+          <img src="<%="/user_images/#{post.user.image_name}"%>">
+        </div>
+        <!-- 名前と投稿文を生成 -->
+        <div class="post-right">
+          <div class="post-user-name">
+            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+          </div>
+          <%= link_to(post.content, "/posts/#{post.id}") %>
+        </div>
+      </div>
+    <% end %>
+    <%= paginate @posts %>
+  </div>
+</div>
