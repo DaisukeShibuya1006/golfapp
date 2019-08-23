@@ -8,9 +8,7 @@
       <%= link_to("編集", "/users/#{@user.id}/edit") %>
       <% end %>
     </div>
-    
-    <%# ユーザーの投稿情報を取得する %>
-    <% @user.posts.each do |post| %>
+   <% @user.posts.each do |post| %>
     <div class="posts-index-item">
       <!-- 画像を取得する -->
       <div class="post-left">
