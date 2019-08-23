@@ -20,8 +20,8 @@ class UsersController < ApplicationController
     @user = User.new(
       name: params[:name],
       email: params[:email],
-      age: params[:age],
-      password: params[:password]
+      password: params[:password],
+      image_name: params[:image_name]
     )
     if @user.save
       session[:user_id] = @user.id
