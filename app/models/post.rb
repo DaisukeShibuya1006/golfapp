@@ -7,6 +7,4 @@ class Post < ApplicationRecord
     return User.find_by(id: self.user_id)
   end
   paginates_per 10
-
-  mount_uploader :image, ImageUploader
 end
