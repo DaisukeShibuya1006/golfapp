@@ -168,7 +168,7 @@ header {
 
 /* フォーム================================ */
 .form {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 2px 6px #c1ced7;
@@ -183,6 +183,8 @@ header {
 
 .form-body {
   padding: 30px;
+  width: 400px;
+  margin: auto;
 }
 
 .form-error {
