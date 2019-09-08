@@ -17,5 +17,15 @@
         <% end %>
       </div>
     </div>
+    <h2>簡単ログイン機能</h2>
+    <div class="card card-containe">
+     <p>テストユーザとしてログインできます。</p>
+     <%= form_tag("/login") do %>
+      <input name="email" value="test@yahoo.co.jp" type="hidden">
+      <input name="password" value="testtest" type="hidden">
+      <button type="submit" name="button" class="btn btn-info">お試しログイン</button>
+      <!-- <input type="submit" name="commit" value="お試しログイン"　class="btn btn-info"> -->
+      <% end %>
+     </div>
   </div>
 </div>
