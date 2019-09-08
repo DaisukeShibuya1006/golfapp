@@ -1,11 +1,10 @@
 <div class="main users-new">
   <div class="container text-center">
-   <div class="card card-containe">
-    <p>テストユーザとしてログインできます。</p>
+   <div class="test_user">
     <%= form_tag("/login") do %>
      <input name="email" value="test@yahoo.co.jp" type="hidden">
      <input name="password" value="testtest" type="hidden">
-     <button type="submit" name="button" class="btn btn-info">お試しログイン</button>
+     <button type="submit" name="button" class="btn btn-info btn-lg w-50">お試しログイン</button>
      <!-- <input type="submit" name="commit" value="お試しログイン"　class="btn btn-info"> -->
      <% end %>
     </div>
