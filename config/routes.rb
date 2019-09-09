@@ -21,4 +21,10 @@ Rails.application.routes.draw do
 
   get "/" => "home#top"
   get "about" => "home#about"
+
+  devise_for :users
+  resources :users, only: [:index, :show]
+  resources :posts, only: [:index, :show, :create] do
+  resources :comments, only: [:create]
+  end
 end

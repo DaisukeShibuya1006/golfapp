@@ -7,4 +7,5 @@ class Post < ApplicationRecord
     return User.find_by(id: self.user_id)
   end
   paginates_per 10
+  belongs_to :user
 end
