@@ -47,12 +47,12 @@ class PostsController < ApplicationController
     @post.content = params[:content]
 
     if @post.save
-      redirect_to("/posts/index")
+      redirect_to("/posts/index") and return
     else
-      render("posts/edit")
+      render("posts/edit") and return
     end
     @post.save
-    redirect_to("/posts/index")
+    redirect_to("/posts/index") and return
   end
 
   def destroy
