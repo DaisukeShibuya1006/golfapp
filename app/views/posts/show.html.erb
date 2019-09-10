@@ -4,7 +4,7 @@
       <div class="post-user-name">
         <img src="<%= "/user_images/#{@user.image_name}"%>">
 
-     <%= link_to(@user.name,"/users/#{@user.id}") %>
+      <%= link_to(@user.name,"/users/#{@user.id}") %>
       </div>
       <p>
         <%= @post.content %>
@@ -12,6 +12,7 @@
       <div class="post-time">
         <%= @post.created_at %>
       </div>
+    <%# 投稿作成者が投稿内容を変更できる   %>
      <% if@post.user_id == @current_user.id %>
       <div class="post-menus">
         <%= link_to("編集", "/posts/#{@post.id}/edit") %>
