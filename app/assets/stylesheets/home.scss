@@ -38,7 +38,6 @@ form input[type="submit"] {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-  background-color: #3ecdc6;
   margin: 0;
   min-height: 1vh;
 }
@@ -49,7 +48,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 100%;
-  background-color: #f5f8fa;
+  background-color: #FFEEFF;
 }
 
 .container {
@@ -66,19 +65,19 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
+  background: #7FFFD4;
 }
 
 .header-logo {
   float: left;
   padding-left: 20px;
-  color: white;
   font-size: 22px;
   line-height: 64px;
 }
 
 .header-logo a{
-  color: white;
-  font-size: 22px;
+  font-size: 30px;
+  color: green;
 }
 
 .header-menus {
@@ -89,15 +88,16 @@ header {
 .header-menus li {
   float: left;
   line-height: 64px;
-  font-size: 13px;
-  color: white;
+  font-size: 20px;
+  color: green;
   padding-left: 15px;
 }
 
 .header-menus a {
   float: left;
-  font-size: 13px;
-  color: white;
+  font-size: 15px;
+  color: red;
+  color: green;
 }
 
 .header-menus .fa {
@@ -122,8 +122,8 @@ header {
   width: 100%;
   height: auto;
   min-height: 100%;
-  color: white;
-  background-color: #3ecdc6;
+  color: green;
+  background-color: #FFEEFF;
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
@@ -147,8 +147,9 @@ header {
 
 /* about ================================ */
 .about-main {
-  padding: 180px 8% 0;
-  color: white;
+  padding: 200px 200px 340px 200px;
+  background-color: #FFEEFF;
+  color: green;
 }
 
 .about-main h2 {
@@ -160,15 +161,13 @@ header {
 .about-main p {
   font-weight: 200;
   font-size: 20px;
+  margin-top: 30px;
 }
 
-.about-img {
-  width: 84%;
-}
 
 /* フォーム================================ */
 .form {
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 2px 6px #c1ced7;
@@ -183,6 +182,8 @@ header {
 
 .form-body {
   padding: 30px;
+  width: 400px;
+  margin: auto;
 }
 
 .form-error {
