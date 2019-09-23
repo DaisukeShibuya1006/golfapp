@@ -12,4 +12,11 @@
       <% end %>
      </div>
   </div>
+  <h1>Twitter認証する</h1>
+  <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+  <% end %>
+  <% if session[:nickname] %>
+    <p><%= "#{session[:nickname]}さん、こんにちは！" %></p>
+  <% end %>  
 </div>
