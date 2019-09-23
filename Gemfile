@@ -66,3 +66,5 @@ gem 'kaminari'
 gem 'devise'
 
 gem 'bootstrap'
+
+gem 'omniauth-twitter'
