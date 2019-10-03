@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :uusers
   post "logout" => "users#logout"
   post "login" => "users#login"
   get "login" => "users#login_form"

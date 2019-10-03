@@ -1,9 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ゴルフ好きがゴルフに関する話題で盛り上がるアプリ。
 
-Things you may want to cover:
 
 * Ruby version
 
