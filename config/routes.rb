@@ -22,7 +22,4 @@ Rails.application.routes.draw do
 
   get "/" => "home#top"
   get "about" => "home#about"
-  get '/auth/:provider/callback', to: 'sessions#create'
-  get '/home', to: 'home#index'
-  root 'home#index'
 end
